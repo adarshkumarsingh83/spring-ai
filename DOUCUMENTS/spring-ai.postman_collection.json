@@ -115,6 +115,15 @@
 				"url": "http://localhost:9090/api/chat/rag/easpark-adarsh-details"
 			},
 			"response": []
+		},
+		{
+			"name": "rag-vector-web",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9090/api/chat/rag/spring-boot-ai"
+			},
+			"response": []
 		}
 	]
 }

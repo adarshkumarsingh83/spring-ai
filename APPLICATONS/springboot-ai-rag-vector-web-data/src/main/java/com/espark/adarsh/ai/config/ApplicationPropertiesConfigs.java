@@ -1,5 +1,6 @@
 package com.espark.adarsh.ai.config;
 
+import jakarta.annotation.PostConstruct;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -12,8 +13,15 @@ import java.util.Map;
 @Data
 @Configuration
 @ConfigurationProperties(prefix = "espark.config")
-public class ApplicationTagConfig {
+public class ApplicationConfigs {
 
-    private Map<String,String> tags = new HashMap<>();
+    private Map<String,String> urls = new HashMap<>();
+
+    private SplitConfig tokenSplit = new SplitConfig();
+
+    @PostConstruct
+    public void init() {
+        log.info("ApplicationTagConfig : {}", this);
+    }
 
 }
