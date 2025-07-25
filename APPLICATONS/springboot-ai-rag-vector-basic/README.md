@@ -4,8 +4,11 @@
 
 ![img](./img/postman.png)
 
-* curl 
+* api call 
+* curl --location 'http://localhost:9090/api/chat/rag/springai'
 ```
-curl --location 'localhost:9090/api/chat-with-prompt/describe/spring-ai '
-
+{
+    "response": "distance: 0.21068208454657456\n\ni prefer to work on spring boot and i like to work on spring boot",
+    "subject": "springai"
+}
 ```

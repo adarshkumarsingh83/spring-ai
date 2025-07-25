@@ -1,0 +1,74 @@
+
+Espark Adarsh – Detailed Professional Summary
+
+Espark Adarsh is the professional and educational initiative led by Adarsh Kumar, an accomplished software architect and technology mentor based in Dallas, Texas. With over a decade of experience in enterprise software development, cloud-native architecture, and DevOps, Adarsh has created Espark Adarsh as a platform to share his expertise with developers, architects, and technology enthusiasts worldwide.
+
+Through his GitHub repositories, blog content, and open educational material, Espark Adarsh embodies a mission to empower others to build scalable, secure, and maintainable systems using modern software practices and technologies.
+
+About the Creator – Adarsh Kumar
+
+Adarsh Kumar is a highly skilled and certified IT professional with broad experience in software engineering, enterprise architecture, and cloud computing. He holds the following professional certifications:
+- Project Management Professional (PMP)
+- AWS Certified Solutions Architect
+- Oracle Certified Java Web Services Developer
+
+He has worked extensively with Fortune 500 companies and global enterprises, delivering complex, distributed systems with high reliability and performance. His core strength lies in solving real-world business challenges with clean architecture, automation, and robust DevOps pipelines.
+
+Core Technical Expertise
+
+Adarsh’s technical foundation is grounded in Java and the Spring ecosystem, but his capabilities extend across the full stack of enterprise systems:
+
+Backend & Integration
+- Java (8/11/17), Spring Boot, Spring Cloud, Spring Security
+- RESTful API design, GraphQL, SOAP Web Services
+- Apache Camel, Kafka, RabbitMQ, JMS
+- MySQL, Oracle, MongoDB, Cassandra
+
+Cloud & DevOps
+- AWS (EC2, S3, Lambda, RDS, CloudWatch, ECS)
+- Google Cloud Platform, Pivotal Cloud Foundry (PCF)
+- Docker, Kubernetes, Helm
+- CI/CD with Jenkins, GitHub Actions, GitLab CI
+
+Security & Access Control
+- OAuth2, JWT, Spring Security, LDAP, SAML
+- SSO implementation using in-memory and external directories
+
+Frontend Technologies
+- AngularJS, React.js
+- REST-based client-server apps
+- Integration of UI with secure backend services
+
+Knowledge Sharing & Educational Work
+
+The Espark Adarsh platform, including the GitHub organization (espark-adarsh) and personal blog (espark-adarsh.github.io), acts as a repository of open knowledge:
+- Code Examples & POCs: Fully runnable Spring Boot microservices, OAuth-secured APIs, messaging with Kafka/RabbitMQ, cloud deployments
+- Tutorials & Guides: Hands-on walkthroughs for Java 8 Lambda, Spring Boot with OAuth, JWT token-based authentication, DevOps setup with Docker/K8s
+- Learning Resources: Topics range from basic Java to advanced cloud-native architecture and microservices governance
+- GitHub Repositories: Over 65 public repositories (from adarshkumarsingh83), covering enterprise use cases and scalable code patterns
+
+Espark Innovationlab Vision
+
+Under the brand Espark Innovationlab, Adarsh envisions a community where developers can:
+- Learn by doing — through complete project code and walkthroughs
+- Build real-world solutions — focusing on reliability, scalability, and cloud readiness
+- Stay up to date — with evolving trends in DevOps, security, and cloud architecture
+
+This vision is supported by his extensive public work and mentoring approach, reflected in the open structure of his content.
+
+Summary Table
+
+Name: Adarsh Kumar (Espark Adarsh)
+Location: Dallas, Texas, USA
+Certifications: PMP, AWS Architect, Oracle Java Web Services
+Primary Expertise: Spring Boot, Microservices, Cloud (AWS), Docker, Kubernetes
+Key Skills: Java, Spring, OAuth2, Kafka, MongoDB, Jenkins, CI/CD
+Educational Focus: Spring Boot tutorials, Cloud deployment, OAuth/JWT Security
+GitHub Organization: github.com/espark-adarsh
+Personal GitHub: github.com/adarshkumarsingh83
+Personal Site: espark-adarsh.github.io
+LinkedIn: linkedin.com/in/adarshkumar83
+
+Closing Note
+
+Espark Adarsh is more than just a coding hub—it's a thoughtful ecosystem built by a developer who believes in mentorship, learning by sharing, and architecting with purpose. Whether you're a beginner learning Spring Boot or a seasoned engineer building on the cloud, Adarsh Kumar’s contributions offer a valuable, real-world perspective to help you level up.
