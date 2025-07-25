@@ -11,8 +11,12 @@ spring:
 
 espark:
   config:
-    tags:
-      spring: i prefer to work on spring boot and i like to work on spring boot
-      ai: i like to work on ai and i prefer to work on ai
-      chat: i like to work on chat and i prefer to work on chat
-      basic: i like to work on basic and i prefer to work on basic
+    token-split:
+      defaultChunkSize: 2000 #default 800
+      minChunkSizeChars: 350
+      minChunkLengthToEmbed: 5
+      maxNumChunks: 10000
+      keepSeparator: true
+    urls:
+      springboot: "https://docs.spring.io/spring-boot/documentation.html"
+      springboot-ai: "https://docs.spring.io/spring-ai/reference/index.html"

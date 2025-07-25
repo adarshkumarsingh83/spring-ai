@@ -1,12 +1,12 @@
 package com.espark.adarsh.ai;
 
-import com.espark.adarsh.ai.config.ApplicationTagConfig;
+import com.espark.adarsh.ai.config.ApplicationPropertiesConfigs;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication
-@EnableConfigurationProperties(ApplicationTagConfig.class)
+@EnableConfigurationProperties(ApplicationPropertiesConfigs.class)
 public class SpringbootAiChatRagVectorApplication {
 
 	public static void main(String[] args) {

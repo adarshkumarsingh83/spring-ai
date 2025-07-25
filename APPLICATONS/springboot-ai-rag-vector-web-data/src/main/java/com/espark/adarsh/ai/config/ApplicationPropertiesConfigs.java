@@ -13,7 +13,7 @@ import java.util.Map;
 @Data
 @Configuration
 @ConfigurationProperties(prefix = "espark.config")
-public class ApplicationConfigs {
+public class ApplicationPropertiesConfigs {
 
     private Map<String,String> urls = new HashMap<>();
 
