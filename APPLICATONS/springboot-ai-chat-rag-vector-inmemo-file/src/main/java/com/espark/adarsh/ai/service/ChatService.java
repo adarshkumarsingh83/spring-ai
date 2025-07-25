@@ -26,7 +26,8 @@ public class ChatService {
     private VectorStore vectorStore;
     private ChatClient chatClient;
 
-    public ChatService(VectorStore vectorStore) {
+    public ChatService(VectorStore vectorStore, ChatClient chatClient) {
+        this.chatClient = chatClient;
         this.vectorStore = vectorStore;
     }
 
