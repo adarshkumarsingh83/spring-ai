@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: "springboot-ai-chat-basic"
+
+  ai:
+    openai:
+        api-key: ${OPENAI_API_KEY}
+        chat:
+        model: gpt-3.5-turbo
+        temperature: 0.7
+
+espark:
+  config:
+    tags:
+      name: adarsh kumar singh born on 1998-12-31
+      spring: i prefer to work on spring boot and i like to work on spring boot
+      ai: i like to work on ai and i prefer to work on ai
+      chat: i like to work on chat and i prefer to work on chat
+      basic: i like to work on basic and i prefer to work on basic
