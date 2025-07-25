@@ -94,7 +94,25 @@
 						}
 					]
 				},
-				"url": "localhost:9090/api/chat/list/car"
+				"url": "localhost:9090/api/chat/map/car"
+			},
+			"response": []
+		},
+		{
+			"name": "rag-vector-immemoary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9090/api/chat/rag/springai"
+			},
+			"response": []
+		},
+		{
+			"name": "rag-vector-file-immemoary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9090/api/chat/rag/easpark-adarsh-details"
 			},
 			"response": []
 		}
