@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "3aaa91c1-003d-4d2d-b29f-08db3abb5553",
+		"name": "spring-ai",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "733233"
+	},
+	"item": [
+		{
+			"name": "basic-chat",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Volumes/Adarsh-Home/EDUCATION/GITHUB/espark-project/java-audiocapture-mic/recorded_audio.wav",
+							"disabled": true
+						}
+					]
+				},
+				"url": "localhost:9090/api/chat/what are days in weeks"
+			},
+			"response": []
+		},
+		{
+			"name": "chat-with-prompt",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Volumes/Adarsh-Home/EDUCATION/GITHUB/espark-project/java-audiocapture-mic/recorded_audio.wav",
+							"disabled": true
+						}
+					]
+				},
+				"url": "localhost:9090/api/chat-with-prompt/describe/spring-ai "
+			},
+			"response": []
+		},
+		{
+			"name": "chat-with-prompt-system-message",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Volumes/Adarsh-Home/EDUCATION/GITHUB/espark-project/java-audiocapture-mic/recorded_audio.wav",
+							"disabled": true
+						}
+					]
+				},
+				"url": "localhost:9090/api/chat-with-prompt/describe/describe/spring-ai "
+			},
+			"response": []
+		},
+		{
+			"name": "bean-convertor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Volumes/Adarsh-Home/EDUCATION/GITHUB/espark-project/java-audiocapture-mic/recorded_audio.wav",
+							"disabled": true
+						}
+					]
+				},
+				"url": "localhost:9090/api/chat/list/car"
+			},
+			"response": []
+		}
+	]
+}

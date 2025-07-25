@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: "springboot-ai-chat-basic"
+
+  ai:
+    openai:
+        api-key: ${OPENAI_API_KEY}
+        chat:
+        model: gpt-3.5-turbo
+        temperature: 0.7
+
+espark:
+  config:
+    userTags:
+      describe: " describe about {subject}"
+      information: " information about {subject}"
+      help: " help with {subject}"
+      explain: " explain {subject}"
+    systemTags:
+      describe: "Description provided will be helpful "
+      information: "Information provided will be helpful "
+      help: "Your are helpful "
+      explain: "Your explanation will be helpful "

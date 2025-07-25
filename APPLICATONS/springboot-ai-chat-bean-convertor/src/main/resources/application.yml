@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: "springboot-ai-chat-basic"
+
+  ai:
+    openai:
+        api-key: ${OPENAI_API_KEY}
+        chat:
+        model: gpt-3.5-turbo
+        temperature: 0.7
+
+espark:
+  config:
+    tags:
+      list: list the top 5 {subject} ? {format}
+    classes:
+      car: com.espark.adarsh.ai.bean.Car
+      person: com.espark.adarsh.ai.bean.Person
+      book: com.espark.adarsh.ai.bean.Book
+      movie: com.espark.adarsh.ai.bean.Movie
+      music: com.espark.adarsh.ai.bean.Music
+      food: com.espark.adarsh.ai.bean.Food
+      place: com.espark.adarsh.ai.bean.Place
+      sport: com.espark.adarsh.ai.bean.Sport
+      hobby: com.espark.adarsh.ai.bean.Hobby
