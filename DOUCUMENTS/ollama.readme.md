@@ -4,10 +4,10 @@
  ---
 
 * to download 
- ![download](https://ollama.com/download)
+ [download](https://ollama.com/download)
 
 * to list the avaliable model 
- ![models](https://ollama.com/search)
+ [models](https://ollama.com/search)
 
 * $ ollama help
 ```
