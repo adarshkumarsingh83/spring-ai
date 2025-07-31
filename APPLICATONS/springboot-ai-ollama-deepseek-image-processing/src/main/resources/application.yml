@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: "springboot-ai-ollama-deepseek-image-processing"
+  ai:
+    ollama:
+      base-url: "http://localhost:11434"
+      chat:
+        options:
+          model: llava
+          temperature: 0.8

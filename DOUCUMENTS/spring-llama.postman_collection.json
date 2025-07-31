@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "da40c6ff-5dcb-4274-aa13-c86b2f4bfd8d",
+		"name": "spring-llama",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "733233"
+	},
+	"item": [
+		{
+			"name": "image-processing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/adarshkumar/Downloads/test-image.png"
+						},
+						{
+							"key": "message",
+							"value": "describe me this image ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9090/image",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"image"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
