@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: "springboot-ai-opneai-text-to-speech"
+
+  ai:
+    openai:
+        api-key: ${OPENAI_API_KEY}
+        chat:
+        model: tts-1
+        temperature: 0.7
