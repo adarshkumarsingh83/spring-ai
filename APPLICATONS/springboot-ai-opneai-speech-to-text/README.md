@@ -5,17 +5,13 @@
 
 * curl 
 ```
-curl --location 'localhost:9090/api/audio/generate' \
---header 'Content-Type: application/json' \
---data '{
-    "audioDescription":"hi Adarsh is my nanem and i love shakti"
-}'
+curl --location 'localhost:9090/api/audio/transcript' \
+--form 'audioFile=@"/Volumes/education/GIT/spring-ai/APPLICATONS/springboot-ai-opneai-speech-to-text/audio_1754071075055.mp3"'
 
 ```
 * response 
 ```
 {
-    "audioDescription": "hi Adarsh is my nanem and i love shakti",
-    "response": "File Saved /Volumes/education/GIT/spring-ai/APPLICATONS/springboot-ai-opneai-text-to-speech/output_audio_1754071075055.mp3"
+    "response": "Hi Adarsh is my nanim and I love shakti.\n"
 }
 ```

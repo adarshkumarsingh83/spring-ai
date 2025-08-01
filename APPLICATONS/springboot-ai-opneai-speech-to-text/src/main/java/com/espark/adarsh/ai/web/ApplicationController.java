@@ -13,6 +13,10 @@ public class ApplicationController {
 
     private SpeechToTextService speechToTextService;
 
+    public ApplicationController(SpeechToTextService speechToTextService) {
+        this.speechToTextService = speechToTextService;
+    }
+
     @PostMapping("/api/audio/transcript")
     public Map<String, Object> generateTranscribe(@RequestParam("audioFile") MultipartFile audioFile) {
         String audioServiceResponse = this.speechToTextService.generationAudoTranscriptFunction.apply(audioFile);
