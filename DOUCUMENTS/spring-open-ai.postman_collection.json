@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "8e5e68fd-95e2-4dbc-aa58-2089b73b160b",
+		"name": "spring-open-ai",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "733233"
+	},
+	"item": [
+		{
+			"name": "image-generation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"imageDescription\":\"generate image of flower\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:9090/api/image/generate"
+			},
+			"response": []
+		},
+		{
+			"name": "audio-generate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"audioDescription\":\"hi Adarsh is my nanem and i love shakti\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:9090/api/audio/generate"
+			},
+			"response": []
+		},
+		{
+			"name": "audio-transcript",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "audioFile",
+							"type": "file",
+							"src": "/Volumes/education/GIT/spring-ai/APPLICATONS/springboot-ai-opneai-speech-to-text/audio_1754071075055.mp3"
+						}
+					]
+				},
+				"url": "localhost:9090/api/audio/transcript"
+			},
+			"response": []
+		}
+	]
+}
