@@ -1,10 +1,10 @@
 spring:
   application:
-    name: "springboot-ai-chat-basic"
+    name: "springboot-ai-opneai-image-generation"
 
   ai:
     openai:
         api-key: ${OPENAI_API_KEY}
         chat:
-        model: gpt-3.5-turbo
+        model: dall-e-2
         temperature: 0.7

@@ -2,9 +2,7 @@ package com.espark.adarsh.ai.web;
 
 import com.espark.adarsh.ai.service.ImageGenerationService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
@@ -20,8 +18,9 @@ public class ApplicationController {
     }
 
 
-    @GetMapping("/api/image/{image-description}")
-    public Map<String, Object> chat(@PathVariable("image-description") String imageDescription) {
+    @PostMapping("/api/image/generate")
+    public Map<String, Object> generateImage(@RequestBody Map<String,String> payload) {
+        String imageDescription = payload.get("imageDescription");
         List<String> imageUrls = this.imageGenerationService.imageGenerationFunction.apply(imageDescription);
         log.info("Generated response: {}", imageUrls);
         return Map.of("imageDescription", imageDescription, "imageUrls", imageUrls);
