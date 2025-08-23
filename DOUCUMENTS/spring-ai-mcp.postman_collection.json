@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "6b2ecc87-f0ce-4c43-9c7e-296b9bcd37aa",
+		"name": "spring-ai-mcp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "733233"
+	},
+	"item": [
+		{
+			"name": "springai-mcp-basic-wish",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/chat?query=my name is adarsh ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "my name is adarsh "
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "spring-ai-mcp-server": {
+      "command": "java",
+      "args": [
+        "-Dspring.ai.mcp.server.stdio=true",
+        "-Dserver.port=9998",
+        "-jar",
+        "/Volumes/education/GIT/spring-ai/APPLICATONS/spring-ai-mcp/springboot-ai-mcp-server/target/springboot-ai-mcp-server.jar"
+      ]
+    }
+  }
+}

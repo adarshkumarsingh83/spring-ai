@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: springboot-ai-mcp-server
+  main:
+    banner-mode: "off"
+  ai:
+    mcp:
+      server:
+        name: espark-mcp
+        stdio: true
+        version: "1.0.0"
+        port: 50051
