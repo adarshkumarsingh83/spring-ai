@@ -1,0 +1,16 @@
+services:
+  db:
+    image: pgvector/pgvector:pg17 # Or another version like pgvector/pgvector:latest
+    container_name: pgvector-db
+    environment:
+      POSTGRES_USER: espark
+      POSTGRES_PASSWORD: espark
+      POSTGRES_DB: espark_adarsh
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data # Persistent data storage
+      - ./initdb:/docker-entrypoint-initdb.d # For initial setup scripts
+
+volumes:
+  pgdata:
