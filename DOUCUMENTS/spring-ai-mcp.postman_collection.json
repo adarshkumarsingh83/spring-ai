@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "springai-mcp-basic-wish",
+			"name": "springai-mcp-muliti-server",
 			"request": {
 				"auth": {
 					"type": "noauth"
@@ -15,7 +15,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/chat?query=my name is adarsh ",
+					"raw": "http://localhost:8080/chat?query=get all the employees and person in json format",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -27,7 +27,32 @@
 					"query": [
 						{
 							"key": "query",
-							"value": "my name is adarsh "
+							"value": "get all the employees and person in json format"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "springboot-mcp-basic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/chat?query=my%20name%20is%20adarsh%20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "my%20name%20is%20adarsh%20"
 						}
 					]
 				}
