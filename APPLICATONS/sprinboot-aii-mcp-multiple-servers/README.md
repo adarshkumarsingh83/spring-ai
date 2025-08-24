@@ -22,7 +22,7 @@ success
 ```
 curl --location 'http://localhost:8080/chat?query=get%20all%20the%20employees%20and%20person%20in%20json%20format'
 ```
-![img](./img/postman.png)
+![img](./springboot/mcp-client/img/postman.png)
 
 * to build: `mvn clean package`
 * to run: `java -jar target/springboot-mcp-client-0.0
