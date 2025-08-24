@@ -20,9 +20,8 @@ success
 
 * api call
 ```
-curl --location 'http://localhost:8080/chat?query=my%20name%20is%20adarsh%20'
+curl --location 'http://localhost:8080/chat?query=get%20all%20the%20employees%20and%20person%20in%20json%20format'
 ```
-
 ![img](./img/postman.png)
 
 * to build: `mvn clean package`
