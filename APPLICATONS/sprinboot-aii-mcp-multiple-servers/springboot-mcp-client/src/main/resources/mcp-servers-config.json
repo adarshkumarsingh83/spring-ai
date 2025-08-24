@@ -1,0 +1,31 @@
+{
+  "mcpServers": {
+    "springboot-mcp-server-person": {
+      "command": "java",
+      "args": [
+        "-Dspring.ai.mcp.server.stdio=true",
+        "-Dserver.port=8090",
+        "-jar",
+        "/Volumes/education/GIT/spring-ai/APPLICATONS/sprinboot-aii-mcp-multiple-servers/springboot-mcp-server-person/target/springboot-mcp-server-person.jar"
+      ]
+    },
+    "springboot-mcp-server-employee": {
+      "command": "java",
+      "args": [
+        "-Dspring.ai.mcp.server.stdio=true",
+        "-Dserver.port=9080",
+        "-jar",
+        "/Volumes/education/GIT/spring-ai/APPLICATONS/sprinboot-aii-mcp-multiple-servers/springboot-mcp-server-employee/target/springboot-mcp-server-employee.jar"
+      ]
+    },
+    "springboot-mcp-server-address": {
+      "command": "java",
+      "args": [
+        "-Dspring.ai.mcp.server.stdio=true",
+        "-Dserver.port=9988",
+        "-jar",
+        "/Volumes/education/GIT/spring-ai/APPLICATONS/sprinboot-aii-mcp-multiple-servers/springboot-mcp-server-address/target/springboot-mcp-server-address.jar"
+      ]
+    }
+  }
+}
