@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: springboot-ai-mcp-server
+  main:
+    banner-mode: "off"
+  ai:
+    mcp:
+      server:
+        name: espark-mcp-sse-server
+        version: "1.0.0"
