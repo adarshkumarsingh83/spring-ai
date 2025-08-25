@@ -20,31 +20,31 @@ public class PersonService {
         this.personRepository = personRepository;
     }
 
-    @Tool(description = "get all persons  data")
+    @Tool(name = "get_all_persons", description = "get all persons data in the system")
     public List<Person> getAllPerson () {
         List<Person> personList = new LinkedList<>();
         this.personRepository.findAll().forEach(person -> personList.add(person));
         return personList;
     }
 
-    @Tool(description = "get person  data by id")
-    public Person getPerson (Long id) {
+    @Tool(name = "get_person_by_id", description = "get person  data by id")
+    public Person getPersonByPersonId (Long id) {
         return this.personRepository.findById(id)
                 .orElseThrow(() -> new PersonNotFoundException("Person  not found"));
     }
 
-    @Tool(description = "create new person data")
-    public Person savePerson (Person person) {
+    @Tool(name = "create_person", description = "create new person data in the system")
+    public Person createPerson (Person person) {
         return this.personRepository.save(person);
     }
 
-    @Tool(description = "update person  data by id and person  data")
+    @Tool(name = "update_person", description = "update person  data by id and person  data")
     public Person updatePerson (Long id, Person person) {
         return this.personRepository.save(person);
     }
 
-    @Tool(description = "delete person  data for id")
-    public Person removePerson (Long id) {
+    @Tool(name = "remove_person_by_person_id", description = "delete person  data for id")
+    public Person removePersonByPersonId (Long id) {
         Person employee = this.personRepository.findById(id)
                 .orElseThrow(() -> new PersonNotFoundException("Person  not found"));
         this.personRepository.deleteById(id);

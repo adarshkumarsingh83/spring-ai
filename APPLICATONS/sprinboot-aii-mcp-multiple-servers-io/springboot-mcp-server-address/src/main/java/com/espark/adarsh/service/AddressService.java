@@ -20,31 +20,31 @@ public class AddressService {
         this.addressRepository = addressRepository;
     }
 
-    @Tool(description = "Get All Address")
+    @Tool(name = "get_all_address", description = "Get All Address in the system ")
     public List<Address> getAllAddress() {
         List<Address> addressList = new LinkedList<>();
         this.addressRepository.findAll().forEach(address -> addressList.add(address));
         return addressList;
     }
 
-    @Tool(description = "get address data by id")
-    public Address getAddress(Long id) {
+    @Tool(name = "get_address_by_address_id", description = "get address data by provided address id")
+    public Address getAddressByAddressId(Long id) {
         return this.addressRepository.findById(id)
                 .orElseThrow(() -> new AddressNotFoundException("address not found"));
     }
 
-    @Tool(description = "create new address data")
-    public Address saveAddress(Address address) {
+    @Tool(name = "create_address", description = "create new address data by passing address object which contains address data")
+    public Address createAddress(Address address) {
         return this.addressRepository.save(address);
     }
 
-    @Tool(description = "update address by id and address data")
+    @Tool(name="update_address",description = "update address based on address id and address data ")
     public Address updateAddress(Long id, Address address) {
         return this.addressRepository.save(address);
     }
 
-    @Tool(description = "delete address for id ")
-    public Address removeAddress(Long id) {
+    @Tool(name = "remove_address_by_address_id", description = "delete address based on address id ")
+    public Address removeAddressByAddressId(Long id) {
         Address employee = this.addressRepository.findById(id)
                 .orElseThrow(() -> new AddressNotFoundException("address not found"));
         this.addressRepository.deleteById(id);
