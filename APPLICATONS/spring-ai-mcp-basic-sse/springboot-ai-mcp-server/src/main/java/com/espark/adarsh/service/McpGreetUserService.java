@@ -8,10 +8,10 @@ import java.util.function.Function;
 
 @Slf4j
 @Service
-public class McpService {
+public class McpGreetUserService {
 
-    @Tool(name = "wish_action", description = "wish the user based on the time of the day")
-    public String wishAction (String input) {
+    @Tool(name = "greet_user", description = "this tool is used to greet the user based on time and return the greeting message to the user based on user name ")
+    public String greetUser (String input) {
         log.info("Input received in wishAction : {}",input);
         return wishBasedOnTime.apply(input);
     }
