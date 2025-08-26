@@ -7,10 +7,15 @@ spring:
     mcp:
       server:
         name: espark-mcp-sse-server
+        enabled: true
+        stdio: false
         version: "1.0.0"
-        type: ASYNC
+        type: SYNC
         instructions: "This reactive server provides greeting information tools based on user name"
         sse-message-endpoint: /mcp/messages
+        sse-endpoint: /mcp/sse
+        request-timeout: 1m
+        port: 8040
         capabilities:
           tool: true
           resource: true
