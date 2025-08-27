@@ -1,4 +1,4 @@
-# springboot-mcp-client
+# springboot-mcp-io-client
 
 ---
 
