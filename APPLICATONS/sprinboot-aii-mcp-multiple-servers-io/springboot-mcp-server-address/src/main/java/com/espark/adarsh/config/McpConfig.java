@@ -1,6 +1,7 @@
 package com.espark.adarsh.config;
 
 import com.espark.adarsh.service.AddressService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.ai.tool.method.MethodToolCallbackProvider;
 import org.springframework.context.annotation.Bean;

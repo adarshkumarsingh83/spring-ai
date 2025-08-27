@@ -9,4 +9,14 @@ spring:
         name: espark-mcp-address
         stdio: true
         version: "1.0.0"
-        port: 50051
+        type: SYNC
+        instructions: "This server provides address information tools based on id "
+        sse-message-endpoint: /mcp/messages
+        sse-endpoint: /mcp/sse
+        request-timeout: 1m
+        port: 8010
+        capabilities:
+          tool: true
+          resource: true
+          prompt: true
+          completion: true

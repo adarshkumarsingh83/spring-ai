@@ -9,4 +9,14 @@ spring:
         name: espark-mcp-employee
         stdio: true
         version: "1.0.0"
-        port: 50051
+        port: 8030
+        type: SYNC
+        instructions: "This server provides employee information tools based on id"
+        sse-message-endpoint: /mcp/messages
+        sse-endpoint: /mcp/sse
+        request-timeout: 1m
+        capabilities:
+          tool: true
+          resource: true
+          prompt: true
+          completion: true
