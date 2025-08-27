@@ -1,17 +1,17 @@
 spring:
   application:
-    name: springboot-ai-mcp-server
+    name: springboot-mcp-server-employee
   main:
     banner-mode: "off"
   ai:
     mcp:
       server:
-        name: espark-mcp-sse-server
-        enabled: true
-        stdio: false
+        name: espark-mcp-employee
+        stdio: true
         version: "1.0.0"
+        port: 8030
         type: SYNC
-        instructions: "This reactive server provides greeting information tools based on user name"
+        instructions: "This server provides employee information tools based on id"
         sse-message-endpoint: /mcp/messages
         sse-endpoint: /mcp/sse
         request-timeout: 1m
