@@ -26,6 +26,8 @@ public class McpConfig {
 
     @Bean
     public ToolCallbackProvider addressToolCallbackProvider(AddressService addressService, PersonService personService, EmployeeService employeeService) {
-        return MethodToolCallbackProvider.builder().toolObjects(addressService, personService, employeeService).build();
+        return MethodToolCallbackProvider.builder()
+                .toolObjects(addressService, personService, employeeService)
+                .build();
     }
 }
