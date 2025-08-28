@@ -2,7 +2,6 @@ package com.espark.adarsh.service;
 
 import com.espark.adarsh.config.ServiceConfig;
 import com.espark.adarsh.entity.Address;
-import com.espark.adarsh.exception.AddressNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.core.ParameterizedTypeReference;

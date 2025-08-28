@@ -6,7 +6,7 @@ spring:
   ai:
     mcp:
       server:
-        name: espark-mcp-server
+        name: espark-mcp-sse-server
         enabled: true
         stdio: false
         version: "1.0.0"
