@@ -1,5 +1,6 @@
 package com.espark.adarsh.service;
 
+import com.espark.adarsh.config.SystemPromptText;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
@@ -16,12 +17,16 @@ import java.util.Arrays;
 public class QueryService {
 
     private ChatClient chatClient;
+    private SystemPromptText systemPromptText;
     private ChatClient.Builder chatClientBuilder;
     private ToolCallbackProvider toolCallbackProvider;
 
-    public QueryService(ChatClient.Builder chatClientBuilder, ToolCallbackProvider toolCallbackProvider) {
+    public QueryService(ChatClient.Builder chatClientBuilder,
+                        ToolCallbackProvider toolCallbackProvider
+    , SystemPromptText systemPromptText) {
         this.chatClientBuilder = chatClientBuilder;
         this.toolCallbackProvider = toolCallbackProvider;
+        this.systemPromptText = systemPromptText;
     }
 
     @PostConstruct
@@ -31,7 +36,7 @@ public class QueryService {
             log.info("Tool Callback Description: {}", toolCallback.getToolDefinition().description());
         });
         this.chatClient = chatClientBuilder
-                .defaultSystem("Please prioritise context information for answering questions")
+                .defaultSystem(systemPromptText.getSystemPrompt())
                 .defaultToolCallbacks(toolCallbackProvider)
                 .build();
     }
