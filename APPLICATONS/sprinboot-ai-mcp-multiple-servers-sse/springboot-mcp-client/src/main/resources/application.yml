@@ -1,0 +1,42 @@
+
+spring:
+  application:
+    name: springboot-mcp-client
+
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: llama3.2:1b
+    mcp:
+      client:
+        enabled: true
+        name: espark-mcp-client
+        version: "1.0.0"
+        request-timeout: 30s
+        type: SYNC
+        tool-callback:
+          enabled: true
+          thread-pool-size: 10
+        sse:
+          connections:
+            espark-mcp-address-sse-server:
+              url: http://localhost:8091
+              sse-endpoint: /mcp/sse
+            espark-mcp-person-sse-server:
+              url: http://localhost:8092
+              sse-endpoint: /mcp/sse
+            espark-mcp-employee-sse-server:
+              url: http://localhost:8093
+              sse-endpoint: /mcp/sse
+espark:
+  mcp:
+    client:
+      system-prompt: |
+        You are a helpful assistant. Follow the user's instructions carefully and provide accurate information.
+        If you don't know the answer, just say you don't know. Do not make up answers.
+        personId , addressId and deptId has the same value to fetch data 
+        person service have these information personId,firstName,lastName 
+        and department service has these information deptId,deptName,project 
+        and address service has these information addressId,city,street

@@ -1,0 +1,8 @@
+espark-mcp-address-sse-server 8091
+service 8094
+
+espark-mcp-person-sse-server 8092
+service 8095
+
+espark-mcp-employee-sse-server 8093
+service 8096

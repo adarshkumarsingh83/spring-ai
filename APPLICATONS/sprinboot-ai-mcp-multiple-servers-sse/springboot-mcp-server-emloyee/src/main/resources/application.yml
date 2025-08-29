@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: springboot-mcp-server-person
+  main:
+    banner-mode: "off"
+  ai:
+    mcp:
+      server:
+        name: espark-mcp-person-sse-server
+        enabled: true
+        stdio: false
+        version: "1.0.0"
+        type: SYNC
+        instructions: "This server provides employee information tools based on id"
+        sse-message-endpoint: /mcp/messages
+        sse-endpoint: /mcp/sse
+        request-timeout: 1m
+        resource-change-notification: true
+        prompt-change-notification: true
+        tool-change-notification: true
+        capabilities:
+          tool: true
+          resource: true
+          prompt: true
+          completion: true
+espark:
+  service:
+    employee-service:
+        url: http://localhost:8096
+        description: Employee Service
