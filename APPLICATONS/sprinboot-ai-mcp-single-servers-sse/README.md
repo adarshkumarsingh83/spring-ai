@@ -1,4 +1,4 @@
-# springboot-mcp-io-client
+# sprinboot-ai-mcp-single-servers-sse
 
 ---
 

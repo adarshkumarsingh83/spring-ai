@@ -23,12 +23,7 @@ spring:
           connections:
             espark-mcp-sse-server:
               url: http://localhost:8081
-              timeout: 5000
               sse-endpoint: /mcp/sse
-          server-url: http://localhost:8081
-          client-name: espark-mcp-client
-          client-version: "1.0.0"
-          timeout: 5000
 
 espark:
   mcp:
