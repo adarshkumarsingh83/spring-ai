@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: "springboot-ai-mysql-rag"
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      embedding:
+        enabled: true
+        option:
+            model: "mistral"
+      chat:
+        enabled: true
+        option:
+          model: "mistral"
+
+  datasource:
+    url: jdbc:mysql://${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&useSSL=false
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASSWORD}
+    platform: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    testWhileIdle: true
+    validationQuery: SELECT 1
+    hikari:
+      initialization-fail-timeout: 100
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+
+espark:
+  chat:
+    system-prompt:
+      ' You have access to a database with tables:
+        Student(id, name)
+        Course(id, name)
+        StudentCourse(id, student_id, course_id)
+        
+        User question: "%s"
+        
+        Return only a valid SQL SELECT query based on the question.
+        DO NOT explain anything, only raw SQL. No markdown, no comments.'
