@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: "springboot-oauth-server"
+  security:
+    oauth2:
+      authorizationserver:
+        client:
+          mcp-sse-client:
+            registration:
+              client-id: ${MCP_CLIENT_ID}
+              client-secret: ${MCP_SECRET}
+              scopes:
+                - mcp
+              client-authentication-methods:
+                - "client_secret_basic"
+              authorization-grant-types:
+                - "client_credentials"

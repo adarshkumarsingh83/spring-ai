@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "a2c5a8b9-fbcf-42e5-ac65-62f6035d5dca",
+		"name": "oauth-mcp-sse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "733233"
+	},
+	"item": [
+		{
+			"name": "oauth-server-jwks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:9090/oauth2/jwks"
+			},
+			"response": []
+		},
+		{
+			"name": "oauth-token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "mcp-secret",
+						"username": "espark-mcp-sse-client"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "mcp",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:9090/oauth2/token"
+			},
+			"response": []
+		}
+	]
+}

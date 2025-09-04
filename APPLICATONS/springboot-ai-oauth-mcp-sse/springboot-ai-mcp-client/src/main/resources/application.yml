@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: springboot-ai-mcp-client
+
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: llama3.2:1b
+    mcp:
+      client:
+        enabled: true
+        name: espark-mcp-client
+        version: "1.0.0"
+        request-timeout: 30s
+        type: SYNC
+        tool-callback:
+          enabled: true
+          thread-pool-size: 10
+        sse:
+          connections:
+            espark-mcp-sse-server:
+              url: http://localhost:8040
+              timeout: 5000
+              sse-endpoint: /mcp/sse
+          server-url: http://localhost:8040
+          client-name: espark-mcp-client
+          client-version: "1.0.0"
+          timeout: 5000
+
+  security:
+    oauth2:
+      client:
+        registration:
+          my-client1:
+            provider: auth-server
+            client-id: espark-mcp-sse-client
+            client-secret: mcp-secret
+            authorization-grant-type: client_credentials
+            scope:
+              - mcp
+        provider:
+          auth-server:
+            token-uri: http://localhost:9090/oauth2/token
+
+    autoconfigure:
+      exclude:
+        - org.springframework.ai.mcp.client.autoconfigure.SseWebFluxTransportAutoConfiguration
+
+  logging:
+    level:
+      io.modelcontextprotocol: TRACE
+      org.springframework.ai.mcp: TRACE
